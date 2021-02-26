@@ -13,11 +13,12 @@
 </head>
 
 <body>
-    <!-- TODO: REMOVE BORDER MARKDOWN -->
+    <!-- // TODO: REMOVE BORDER MARKDOWN -->
+    <!-- TODO: COLOCAR LIMITE DE CARACTERES NO NOME DO USUÁRIO -->
 
     <header class="navbar navbar-dark bg-dark sticky-top p-1 flex-md-nowrap shadow">
         <!-- BRAND -->
-        <a href="" class="navbar-brand px-3 col-md-3 me-0">Company</a>
+        <a href="" class="navbar-brand px-3 col-md-3 me-0 border-0">Company</a>
         <!-- TOGGLE BUTTON -->
         <!-- VISIBLE ONLY SMALL SCREENS -->
         <button class="navbar-toggler d-md-none collapsed border-0 rounded-0" type="button" data-bs-toggle="collapse"
@@ -60,8 +61,61 @@
             </li>
         </ul>
     </header>
+    <!-- CONTENT -->
+    <section class="container-fluid">
+        <div class="row">
+            <!-- SIDEBAR -->
+            <nav class="sidebar col-md-3 d-md-block collapse shadow" id="sidebarMenu">
+                <div class="position-sticky pt-3">
+                    <!-- 1 SECTION -->
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="" class="nav-link active" aria-current="page">
+                                <i class="bi bi-house"></i> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-arrow-repeat"></i> Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-arrow-repeat"></i> Another Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-arrow-repeat"></i> Something else here</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-arrow-repeat"></i> Something else here</a>
+                        </li>
+                    </ul>
+                    <!-- SIDEBAR HEADING -->
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center text-muted px-3 mt-4 mb-1">
+                        Title Here
+                    </h6>
+                    <!-- 2 SECTION -->
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-arrow-repeat"></i> Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-arrow-repeat"></i> Another Action</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-arrow-repeat"></i> Something else here</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><i class="bi bi-arrow-repeat"></i> Something else here</a>
+                        </li>
+                    </ul>
 
-    <section class="container-fluid"></section>
+                </div>
+
+            </nav>
+            <!-- MAIN -->
+            <main class="col-md-9 ms-sm-auto px-md-4 border border-dark">
+                ...
+            </main>
+        </div>
+    </section>
 
     <!-- Modal -->
     <div class="modal fade" id="logout" data-bs-backdrop="static" tabindex="-1" aria-labelledby="logouModal"
