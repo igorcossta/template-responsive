@@ -39,8 +39,11 @@
         <ul class="navbar-nav px-3 w-100 flex-row justify-content-center align-items-center ">
             <!-- USER BUTTON -->
             <li class="nav-item dropdown me-2">
-                <a href="#" class="nav-link" id="userButton" role="button" data-bs-toggle="dropdown"
+                <a href="#" class="nav-link d-none d-md-block" id="userButton" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="bi bi-person"></i> John Doe</a>
+                <!-- VISIBLE ONLY SMALL SCREENS -->
+                <a href="#" class="nav-link d-block d-sm-block d-md-none p-0 px-4 fs-3" id="userButton" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="bi bi-person"></i></a>
                 <ul class="dropdown-menu dropdown-menu-dark position-absolute" aria-labelledby="userButton">
                     <li>
                         <h6 class="dropdown-header">Settings</h6>
@@ -65,7 +68,7 @@
     <section class="container-fluid">
         <div class="row">
             <!-- SIDEBAR -->
-            <nav class="sidebar col-md-3 d-md-block collapse shadow" id="sidebarMenu">
+            <nav class="sidebar col-md-3 d-md-block collapse shadow bg-light" id="sidebarMenu">
                 <div class="position-sticky pt-3">
                     <!-- 1 SECTION -->
                     <ul class="nav flex-column">
@@ -111,8 +114,20 @@
 
             </nav>
             <!-- MAIN -->
-            <main class="col-md-9 ms-sm-auto px-md-4 border border-dark">
-                ...
+            <main class="col-md-9 ms-auto p-4 m-0">
+                <!-- TITLE CONTENT -->
+                <div class="d-md-flex justify-content-md-between align-items-center">
+                    <h1 class="text-center m-md-0 mb-sm-2">Dashboard</h1>
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="btn-group me-2" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary rounded-0">BTN 1</button>
+                            <button type="button" class="btn btn-primary rounded-0">BTN 2</button>
+                        </div>
+                        <button type="button" class="btn btn-primary rounded-0">SORTING</button>
+                    </div>
+
+                </div>
             </main>
         </div>
     </section>
