@@ -42,8 +42,8 @@
                 <a href="#" class="nav-link d-none d-md-block" id="userButton" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="bi bi-person"></i> John Doe</a>
                 <!-- VISIBLE ONLY SMALL SCREENS -->
-                <a href="#" class="nav-link d-block d-sm-block d-md-none p-0 px-4 fs-3" id="userButton" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false"><i class="bi bi-person"></i></a>
+                <a href="#" class="nav-link d-block d-sm-block d-md-none p-0 px-4 fs-3" id="userButton" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i></a>
                 <ul class="dropdown-menu dropdown-menu-dark position-absolute" aria-labelledby="userButton">
                     <li>
                         <h6 class="dropdown-header">Settings</h6>
@@ -114,7 +114,7 @@
 
             </nav>
             <!-- MAIN -->
-            <main class="col-md-9 ms-auto p-4 m-0">
+            <main class="col-md-9 ms-auto p-4">
                 <!-- TITLE CONTENT -->
                 <div class="d-md-flex justify-content-md-between align-items-center">
                     <h1 class="text-center m-md-0 mb-sm-2">Dashboard</h1>
@@ -128,6 +128,85 @@
                     </div>
 
                 </div>
+
+                <!-- CARDS -->
+                <section>
+                    <div class="row mt-3 mt-md-5">
+                        <!-- CARD MONEY -->
+                        <div class="col-sm-3 my-2 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Money</h5>
+                                    <p class="card-text">R$ 154.120.450,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD KILLS -->
+                        <div class="col-sm-3 my-2 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kills</h5>
+                                    <p class="card-text">954</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD DEATHS -->
+                        <div class="col-sm-3 my-2 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Deaths</h5>
+                                    <p class="card-text">654</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD CLAN -->
+                        <div class="col-sm-3 my-2 my-md-0">
+                            <div class="card">
+                                <!-- ONLY WITH CLAN -->
+                                <div class="card-body d-none">
+                                    <h5 class="card-title">Clan</h5>
+                                    <p class="card-text">GM - Game Masters</p>
+                                </div>
+                                <!-- WITHOUT CLAN -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Without clan</h5>
+                                    <p class="card-text">You don't have a clan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- CHART -->
+                <section>
+                    <div class="row mt-2 mt-md-4">
+                        <!-- CHART VICTIMS TYPE -->
+                        <div class="col-sm-6 mb-2 mb-md-0">
+                            <div class="card">
+                                <h5 class="card-header">Victim's Type</h5>
+                                <div class="card-body">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                                <div class="card-footer text-muted text-center">
+                                    Número de vítimas em cada categoria.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CHART ... -->
+                        <div class="col-sm-6 mb-2 mb-md-0">
+                            <div class="card h-100">
+                                <h5 class="card-header">Earnings</h5>
+                                <div class="card-body">
+                                    <canvas id="myChart3"></canvas>
+                                </div>
+                                <div class="card-footer text-muted text-center">
+                                    Ganhos mensais.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     </section>
@@ -154,6 +233,12 @@
 
     <!-- SCRIPTS -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <!-- CUSTOM SCRIPTS -->
+    <script src="scripts/chart/donut_chart.js"></script>
+    <script src="scripts/chart/line_chart.js"></script>
+    <script src="scripts/chart/bar_chart.js"></script>
 </body>
 
 </html>
